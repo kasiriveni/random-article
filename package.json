@@ -4,7 +4,9 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --mode development -w"
+    "start": "webpack --mode development -w",
+    "prod": "webpack --mode production",
+    "test": "jest"
   },
   "dependencies": {
     "react": "^16.3.2",
@@ -15,11 +17,20 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "jest": "^22.4.3",
+    "style-loader": "^0.20.3",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
+  },
+  "jest": {
+    "transform": {}
   }
 }

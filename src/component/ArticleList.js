@@ -10,7 +10,7 @@ class ArticleList extends React.Component{
             <div>
                     {this.props.list.map((item)=>{
                         //console.log(item)
-                        return (<div key={item.title}>{item.body}</div>)
+                        return (<div  className="listItem" key={item.title}>{item.body}</div>)
                     })}
             </div>
         )

@@ -1,4 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.listItem:nth-child(even) {
+    border: 5px solid darkcyan;
+    padding: 10px;
 }

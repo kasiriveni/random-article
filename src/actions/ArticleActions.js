@@ -1,7 +1,7 @@
-import {FILTERS_NAME} from '../constants/constants'
+import {FILTERS_NAME,POST_URL} from '../constants/constants'
 
 export const GetArticle=(data)=>(dispatch)=>{
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch(POST_URL)
     .then(response => response.json())
     .then(json => {
         dispatch({
