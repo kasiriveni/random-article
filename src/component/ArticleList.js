@@ -5,11 +5,9 @@ class ArticleList extends React.Component{
         super(props)
     }
     render(){
-        console.log(this.props.list)
         return(
             <div>
                     {this.props.list.map((item)=>{
-                        //console.log(item)
                         return (<div  className="listItem" key={item.title}>{item.body}</div>)
                     })}
             </div>

@@ -15,7 +15,6 @@ class Articles extends React.Component{
     render(){
         
         const articleList  = this.props.Article.articleList;
-        console.log(this.props)
         return(
             <div>
                     <ArticleList list={articleList}/>

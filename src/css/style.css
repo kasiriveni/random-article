@@ -5,4 +5,10 @@ body {
 .listItem:nth-child(even) {
     border: 5px solid darkcyan;
     padding: 10px;
+    margin: 10px;
+}
+
+.listItem:nth-child(odd) {
+    border: 5px solid darkgoldenrod;
+    padding: 10px;
 }
