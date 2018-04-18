@@ -7,12 +7,13 @@ import RootReducer from '../reducer/RootReducer';
 
 const middleWare = [thunk,logger];
 
-const initialState = "";
+const initialState = {};
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store =createStore(
     RootReducer,
- 
-    compose(
+    initialState,
+    composeEnhancers(
         applyMiddleware(...middleWare)
     )
 
